@@ -1,3 +1,4 @@
+// the class
 const quizData = [
   {
     question: "Who is the current VC of Uniben?",
@@ -104,7 +105,7 @@ const quizData = [
     correct: "d",
   },
 ];
-
+//the selectors
 const answerEls = document.querySelectorAll(".answer");
 const quiz = document.getElementById("quiz");
 const questionEl = document.getElementById("question");
@@ -113,12 +114,12 @@ const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
 const submitBtn = document.getElementById("submit");
-
+//variables
 let currentQuiz = 0;
 let score = 0;
 
 loadQuiz();
-
+//functions
 function loadQuiz() {
   deselectAnswer();
   const currentQuizData = quizData[currentQuiz];
